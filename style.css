@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+header {
+  position: relative;
+  height: 50vw;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+.skew {
+  position: relative;
+  height: 70vw;
+}
+
+.headline {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  margin: 0;
+  font-size: 2em;
+  z-index: 3;
+
+}
+
+.header_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/artificial-intelligence-blur-close-up-546819.jpg)no-repeat center/cover;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+.header_bg-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  opacity: 0.65;
+
+}
+
+.skills_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/backlit-blogging-coding-34153.jpg)no-repeat center;
+  transform: skewY(-10deg);
+  transform-origin: right top;
+}
+
+.skills_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  transform: skewY(-10deg);
+  transform-origin: right top;
+  z-index: 1;
+  opacity: 0.65;
+}
+
+.first-div {
+  width: 150px;
+  /*height: auto; dette her hvad der får vores tekst til automatisk at passe ind in boksen. Den vil automatisk udfylde din tekst, hvilket kan være en hæmsko*/
+  height: 250px;
+  background-color: #eeee;
+  margin: 10px;
+  display: inline-block;
+  margin-top: 10rem;
+  vertical-align: top;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out 0s;
+  /* får boksen til at finde sin plads igen efter hover på en smooth måde*/
+}
+
+.first-div:hover {
+  transform: perspective(600px) translateZ(50px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.forsøg {
+  position: relative;
+  margin: 0;
+  padding-top: 10rem;
+  text-align: center;
+  display: block;
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 10rem;
+  font: 44px "Roboto";
+  text-align: center;
+  z-index: 2;
+}
+
+header h1 {
+  position: relative;
+  color: #eee;
+  font-family: 'Roboto Slab', serif;
+}
+
+.outer {
+  position: relative;
+  height: 65vw;
+  overflow: hidden;
+}
+
+#showcase {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-btn-container {
+  text-align: center;
+  margin: 10vh 0 0 0;
+
+}
+
+#showcase-button {
+  position: relative;
+  background: transparent;
+  color: #eee;
+  border: solid #eee;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#showcase-button:hover {
+  background-color: #eee;
+  color: #48c6ef;
+
+}
+
+.outline {
+  cursor: pointer;
+  outline: none;
+  background-color: #eee;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  border-color: #eee;
+  border-style: solid;
+  border: none;
+  border-radius: 45px;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  /* Dette fjerner underline på linket "CV" */
+}
+
+.icons {
+  margin-top: 20px;
+  padding: 10px;
+  color: #323232;
+}
+
+.header-skills {
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.text-skills {
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.project {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  border: black;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#projects {
+  padding: 50px 15px;
+  border-bottom: 1px solid #c0c0c0;
+  text-align: center
+}
+
+.shadow-large {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-image {
+  float: left;
+}
+
+#projects h2 {
+  color: #374054;
+  margin-bottom: 100px;
+}
+
+.project-info {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+  margin-left: 450px;
+  padding: 15px;
+}
+
+.space {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #323232;
+}
+
+.background-alt {
+  background: #fff;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 30px 0
+}
+
+.heading:after {
+  position: absolute;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
